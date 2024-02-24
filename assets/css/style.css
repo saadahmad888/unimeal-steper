@@ -1,0 +1,433 @@
+@import url("./variables.css");
+
+/* font-family: 'Plus Jakarta Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* font-family: "IBM Plex Sans", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    position: relative;
+    background: var(--color-black0);
+    color: var(--color-black80);
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s all ease;
+}
+
+
+
+/* =======================================================================
+    Buttons CSS
+========================================================================== */
+
+
+
+/* =======================================================================
+    General Common CSS
+========================================================================== */
+/* Step Heading */
+.step-heading{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+.step-heading h2{
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: -0.2px;
+    text-transform: none;
+    font-weight: 700;
+}
+.step-heading p{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-transform: none;
+}
+.step-heading .underline{
+    text-decoration-line: underline;
+    text-decoration-style: initial;
+    text-decoration-color: var(--color-black15);
+    text-decoration-thickness: 8px;
+    text-decoration-skip-ink: none;
+}
+/* text */
+.light-small-text{
+    color: var(--color-black30) !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    font-weight: 400;
+}
+/* Nice Select */
+.nice-select{
+    background-color: rgba(41, 41, 41, 0.04);
+    color: var(--color-black80);
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+.nice-select .list{
+    background: var(--color-black0);
+    border-radius: 5px;
+    box-shadow: rgba(46, 46, 46, 0.2) 0px 2px 12px;
+    /* position: absolute;
+    right: 0px;
+    top: 100%; */
+    padding: 24px 20px;
+    margin-top: 20px;
+    left: unset;
+    right: 0;
+    width: 340px;
+    /* z-index: 201; */
+    /* display: block; */
+}
+.nice-select .list li{
+    display: flex;
+    align-items: center;
+    color: var(--color-black80);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 19px 24px;
+    position: relative;
+    justify-content: stretch;
+    width: 100%;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-black80);
+}
+.nice-select .list li:hover{
+    background-color: var(--color-black10);
+}
+.nice-select .list li.selected{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nice-select .list li.selected::after{
+    font-family: 'Font Awesome 5 Pro';
+    content: '\f00c';
+    font-weight: 400;
+    color: var(--color-black80);
+    font-size: 18px;
+}
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus{
+    background-color: var(--color-black0);
+}
+
+
+/* =======================================================================
+    Navbar CSS
+========================================================================== */
+.stepper-nav{
+    padding: 15px 0;
+}
+.stepper-nav .logo img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.stepper-nav .nav-link-box .nav-ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+}
+.stepper-nav .nav-link-box .nav-ul li a{
+    padding: 0 15px;
+    font-size: 22px;
+    color: rgb(41, 41, 41);
+}
+
+#side-nav .btn-close{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+#side-nav .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.side-navbar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.side-navbar ul li{
+    margin-bottom: 20px;
+}
+.side-navbar ul li a{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: bold;
+    outline: none;
+    text-decoration: none;
+    padding: 12px 24px 13px;
+    width: 100%;
+    color: var(--color-black80);
+}
+
+
+/* =======================================================================
+   Intermitting Section CSS
+========================================================================== */
+.intermitting-check-box{
+
+}
+.intermitting-check-box label div {
+    text-align: center;
+    display: block;
+}
+.intermitting-check-box label div img{
+    width: 100%;
+    cursor: pointer;
+}
+.intermitting-check-box label div span{
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    letter-spacing: 0.14px;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 6px 16px;
+    background-color: var(--color-black80);
+    color: var(--color-black0);
+}
+.intermitting-check-box label div span:hover{
+    background-color: var(--color-black70);
+}
+
+.intermitting-check-box label input {
+    position: absolute;
+    display: none;
+    color: #fff !important;
+}
+.intermitting-check-box input:checked+div span{
+    background-color: var(--color-black80);
+    color: var(--color-black0);
+    border-color: var(--color-black80);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.intermitting-check-box input:checked+div span::after{
+    font-family: 'Font Awesome 5 Pro';
+    content: '\f00c';
+    font-weight: 400;
+    color: var(--color-black0);
+    font-size: 18px;
+}
+
+.form-check-input:checked{
+    background-color: var(--color-black80);
+    border-color: var(--color-black80);
+}
+.form-check-input:focus{
+    box-shadow: none;
+    border-color: var(--color-black80);
+}
+
+/* =======================================================================
+    Smart Wizard  CSS
+========================================================================== */
+#smartwizard .nav-item{
+    display: none;
+}
+.sw-theme-basic{
+    border: none;
+}
+.sw .toolbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--color-black0);
+    box-shadow: rgba(46, 46, 46, 0.2) 0px 2px 12px;
+}
+.sw .toolbar > .sw-btn{
+    border-radius: 8px;
+    padding: 6px 60px;
+    font-weight: 500;
+    line-height: 28px;
+    font-size: 18px;
+    letter-spacing: 0.14px;
+}
+.sw>.progress>.progress-bar{
+    border-radius: 100px;
+}
+
+
+
+/* =======================================================================
+    Step 2 section CSS
+========================================================================== */
+.step2-sec .step-heading h2{
+    font-size: 35px;
+}
+.step2-sec img{
+    margin-bottom: 100px;
+}
+
+
+/* =======================================================================
+    Step 3 section CSS
+========================================================================== */
+.step3-sec .content-box{
+    padding: 20px 24px 20px 30px;
+    background-color: var(--color-black10);
+    border-radius: 24px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.step3-sec .content-box .number{
+    font-size: 45px;
+    font-weight: 700;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+.step3-sec .content-box .title{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-transform: none;
+}
+.step3-sec .content-box .text{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-transform: none;
+}
+
+/* Checkbox */
+.step3-check-box label{
+    width: 100%;
+}
+
+.step3-check-box label .outer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 8px;
+    padding: 30px 14px;
+    background-color: var(--color-black5);
+    border: 2px solid var(--color-black5);
+    width: 100%;
+    cursor: pointer;
+}
+.step4-sec .step3-check-box label .outer-box{
+    padding: 14px!important;
+}
+.step8-sec .step3-check-box label .outer-box{
+    padding: 14px!important;
+}
+.step3-check-box label .outer-box .text p{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.14px;
+    line-height: 24px;
+    margin-bottom: 0px;
+    color: var(--color-black80);
+}
+.step3-check-box label .outer-box .img-box span{
+    font-size: 40px;
+}
+.step3-check-box label .outer-box .img-box img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 85px;
+}
+/* .step3-check-box label .outer-box span{
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    letter-spacing: 0.14px;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 6px 16px;
+    background-color: var(--color-black80);
+    color: var(--color-black0);
+} */
+/* .step3-check-box label .outer-box span:hover{
+    background-color: var(--color-black70);
+} */
+
+.step3-check-box label input {
+    position: absolute;
+    display: none;
+    color: #fff !important;
+}
+.step3-check-box input:checked+.outer-box{
+    background: var(--color-black10);
+    border: 2px solid var(--color-black60);
+}
+/* .step3-check-box input:checked+.outer-box span{
+    background-color: var(--color-black80);
+    color: var(--color-black0);
+    border-color: var(--color-black80);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.step3-check-box input:checked+.outer-box span::after{
+    font-family: 'Font Awesome 5 Pro';
+    content: '\f00c';
+    font-weight: 400;
+    color: var(--color-black0);
+    font-size: 18px;
+} */
+
+
+/* =======================================================================
+    How it works section CSS
+========================================================================== */
+
+
+
+
+
+/* =======================================================================
+    App Section CSS
+========================================================================== */
+
+
+
+
+/* =======================================================================
+    Testimonal Sec CSS
+========================================================================== */
+
+/* =======================================================================
+    Custom ScrollBar CSS
+========================================================================== */
+
+
+
+
+
+/* =======================================================================
+    Footer CSS
+========================================================================== */
