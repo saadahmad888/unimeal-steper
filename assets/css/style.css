@@ -339,6 +339,15 @@ a {
 .step8-sec .step3-check-box label .outer-box{
     padding: 14px!important;
 }
+.step9-sec .step3-check-box label .outer-box{
+    padding: 14px!important;
+}
+.step10-sec .step3-check-box label .outer-box{
+    padding: 14px!important;
+}
+.step14-sec .step3-check-box label .outer-box{
+    padding: 14px!important;
+}
 .step3-check-box label .outer-box .text p{
     font-size: 16px;
     font-weight: 600;
@@ -347,14 +356,50 @@ a {
     margin-bottom: 0px;
     color: var(--color-black80);
 }
+.step3-check-box label .outer-box .text.with-checkboxes p{
+    margin-left: 15px;
+}
+.step3-check-box label .outer-box .text.with-checkboxes .desc{
+    color: var(--color-black50);
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+}
+.step3-check-box label .outer-box .text.with-checkboxes{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.step3-check-box label .outer-box .text.with-checkboxes .checked-img{
+    display: none;
+}
+.step3-check-box input:checked+.outer-box .text.with-checkboxes .checked-img{
+    display: block;
+}
+.step3-check-box input:checked+.outer-box .text.with-checkboxes .uncheck-img{
+    display: none;
+}
 .step3-check-box label .outer-box .img-box span{
-    font-size: 40px;
+    font-size: 30px;
 }
 .step3-check-box label .outer-box .img-box img{
     position: absolute;
     right: 0;
     top: 0;
     height: 85px;
+}
+.step3-check-box.simple-img label .outer-box{
+    padding: 0 14px!important;
+}
+.step3-check-box.simple-img label .outer-box .img-box img{
+    position: relative;
+    height: 70px;
+}
+.step3-check-box label .outer-box .img-box.with-checkboxes img{
+    height: 93px;
+
 }
 /* .step3-check-box label .outer-box span{
     align-items: center;
@@ -402,11 +447,38 @@ a {
 
 
 /* =======================================================================
-    How it works section CSS
+    step 9 section CSS
 ========================================================================== */
-
-
-
+.step-9-info-box{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    background-color: var(--color-black10);
+    border-radius: 9px;
+    padding: 8px 8px 8px 4px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+}
+.step-9-info-box .title{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-transform: none;
+    color: var(--color-black50);
+    margin-bottom: 3px;
+}
+.step-9-info-box .desc{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 18px;
+    text-transform: none;
+    color: var(--color-black50);
+}
 
 
 /* =======================================================================
